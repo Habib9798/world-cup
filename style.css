@@ -1,0 +1,149 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.stadium{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    height: 500px;
+    background-color: darkslategrey;
+    border-radius: 20px;
+    color: white;
+    margin-left:120px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.gallery{
+    width: 80%;
+    padding:15px;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size:20px;
+}
+.audience-1{
+    padding: 12px;
+    color:white;
+    background-color: red;
+    width:20%;
+    border-radius: 5px;
+
+
+}
+.ball{
+    font-size:60px;
+}
+.captain{
+    margin-top: 100px;
+    
+}
+
+/* gellary-2 fart */
+
+.button-aria {
+    display: flex;
+}
+.button-main{
+    width: 200px;
+   height: 200px;
+   align-items: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 70px;
+    
+   
+}
+.btn-1{
+    padding:15px;
+    margin: 10px;
+    background-color: white;
+    color:black ;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+#red-button{
+   background-color: red;
+}
+
+    
+/* main blog */
+.player img{
+    width: 220px;
+    height: 125px;
+   
+   
+   
+   
+}
+.course-info{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap: 24px;
+}
+
+   
+/* main div */
+.container{
+    display: flex;
+    width: 50%;
+   
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 24px;
+   margin-left: 150px;
+   padding: 50px;
+}
+.course{
+    width: 200px;
+    height: 300px;
+    border: 1px solid red;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+.container-end{
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    color: white;
+    
+}
+.footer-element{
+    list-style-type: none;
+    display:flex;
+    margin: 20px;
+    padding: 20px;
+    gap: 24px;
+    text-align:justify;
+    margin-top:150px;
+    margin-right:50px;
+   font-size: 24px;
+}
+.footer-button{
+    text-align:center;
+    font-size: 40px;
+    padding-top:100px;
+    margin-bottom:100px;
+}
+@media only screen and (max-width:688px){
+.stadium{
+    width: 100%;
+}
+.gallery, .button-aria, .container-end{
+    grid-template-columns: repeat(1, 1fr);
+}
+    
+}
+@media only screen and (min-width:688px) and (max-width:792px){
+    .gallery, .button-aria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-end{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
